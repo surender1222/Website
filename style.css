@@ -1,0 +1,82 @@
+body {
+  background-color: #e0f2f1; /* Light green background */
+  font-family: Arial, sans-serif;
+  margin: 0;
+  padding: 20px;
+  display: flex;
+  flex-direction: column;
+  min-height: 100vh;
+}
+
+header,
+main,
+footer {
+  /* Style all sections with some padding and margin */
+  padding: 20px;
+  margin: 10px 0;
+}
+
+header {
+  text-align: center; /* Center header content */
+  display: flex;
+  justify-content: space-between; /* Align logo and title horizontally */
+  align-items: center; /* Align logo and title vertically */
+}
+
+h1 {
+  color: #333; /* Darker text color for better contrast */
+  font-size: 2rem; /* Adjust heading size based on preference */
+  margin: 0; /* Remove default margin for better positioning */
+}
+
+img {
+  width: 100px; /* Adjust logo width as needed */
+  height: auto; /* Maintain aspect ratio */
+}
+
+main {
+  display: flex; /* Arrange app info and download button side-by-side */
+  flex-direction: column;
+  align-items: center; /* Center content within main section */
+  gap: 20px; /* Add space between app info and download button */
+}
+
+.app-info,
+.download-button {
+  /* Style sections for better readability on smaller screens */
+  flex: 1; /* Make sections take up equal space (optional) */
+  text-align: center; /* Center content within sections */
+}
+
+h2 {
+  font-size: 1.5rem; /* Adjust subheading size */
+  color: #333; /* Darker text color for better contrast */
+}
+
+p {
+  color: #666; /* Lighter text color for description */
+  line-height: 1.5; /* Increase line spacing for readability */
+}
+
+button {
+  background-color: #333; /* Dark green button background */
+  color: white; /* White text for better contrast */
+  padding: 10px 20px;
+  border: none;
+  border-radius: 5px;
+  font-size: 16px;
+  cursor: pointer;
+  transition: background-color 0.2s ease-in-out, color 0.2s ease-in-out; /* Smoother hover effects */
+}
+
+button:hover {
+  background-color: #222; /* Darken button background on hover */
+  color: #ddd; /* Lighten text color on hover */
+}
+
+/* Media Queries for responsiveness (optional, adjust as needed) */
+@media (max-width: 768px) {
+  h1,
+  h2 {
+    font-size: 1.2rem; /* Adjust font sizes for smaller screens */
+  }
